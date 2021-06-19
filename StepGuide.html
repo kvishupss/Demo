@@ -1,0 +1,80 @@
+<h1>Instructions</h1>
+
+<dl>
+    <dt>Prerequisites</dt>
+    <dd>Make an account on Git Hub/ Git Lab</dd>
+    <dd>Install Git on local Machine</dd>
+    <dd>Install VSCode on your local machine</dd>
+    <dd>Install CLI on your local machine</dd>
+</dl>
+
+<dl>
+    <dt>Initial Steps in Git Hub</dt>
+    <dd>Click "+" sign on top right corner / Click "Git icon" at top left corner</dd>
+    <dd>Click on Create a new Repository.</dd>
+    <dd>Give your repository a name.</dd>
+    <dd>Create a file. (Ex.ReadMe.md)</dd>
+    <dd>Fill something in body</dd>
+    <dd>Commit the changes with some message.</dd>
+</dl>
+<p>Congratulations! Your first version is onboard.</p>
+
+<dl>
+    <dt>Cloning your repository</dt>
+    <dd>Create a folder in your local machine to keep the files of your repository.</dd>
+    <dd>Open VSCode</dd>
+    <dd>Open terminal by using Task Bar or (CTRL + `)</dd>
+    <dd>Check the Git version by using command "git version"</dd>
+    <dd>Click on file in menu located in top left side, then open folder</dd>
+    <dd>Select your folder which you just created in your local machine</dd>
+    <dd>You will see that same folder's path in the terminal</dd>
+    <dd>Go to Git Hub, open your ReadMe.md file</dd>
+    <dd>click on code tab, there you will find a (HTTPS / SSH/ GIT CLI) URL, copy any one of them </dd>
+    <dd>Paste this copied url in your command terminal of VSCode, using command "git clone "URL", Press Enter</dd>
+    <dd>You will see your file in the Explorer of VSCode now</dd>
+</dl>
+<p>Cloning of Repository is successful on your Local Machine.</p>
+
+<dl>
+    <dt>Authenticate GitHub account and Generate an SSH key</dt>
+    <dd>Open Terminal</dd>
+    <dd>Configure your account by using command (git config --global user.email "Email Address") / (git config --global user.name "name")</dd>
+    <dd>Select open in web browser and enter the password for authentication</dd>
+    <dt>Key Generation</dt>
+    <dd>Open terminal in VSCode and enter (ssh-keygen -t rsa -b 4096 -C "Email Address"), Press Enter </dd>
+    <dd>Give your key a name (Ex. testkey or demokey or repokey)</dd>
+    <dd>Neglect the passphrase for now and press enter 2 time</dd>
+    <dd>You will see some pattern shown in your terminal</dd>
+    <dd>In terminal write (ls) , press enter</dd>
+    <dd>All the available files in your repository will be shown in the directory</dd>
+    <dd>Check if your keyname is there or not, there will be two files (keyname & keyname.pub)</dd>
+    <dd>Do not share these files with anyone.</dd>
+    <dd>To fetch the key write (cat keynam.pub)</dd>
+    <dd>You will the a big string showed up which is starting from ssh and ending on your email address</dd>
+    <dd>Copy that complete String, avoid copying spaces from start and end</dd>
+    <dd>Open Git Hub account.</dd>
+    <dd>Click your profile picture --> Click on Settings --> Click on SSH & GPG keys --></dd>
+    <dd>--> Click on NEW SSH Key --> Paste your key in the box --> Save it.</dd>
+</dl>
+
+<p>Succefully authenicated your agent.</p>
+
+<dl>
+    <dt>Adding a new file to your repository using Local Machine</dt>
+    <dd>Open VSCode, In the explorer move your cursor on folder name you'll find a new file button</dd>
+    <dd>Create a new file of any type</dd>
+    <dd>Give it some Body</dd>
+    <dd>CTRL +S to save it</dd>
+    <dd>Open Terminal (CTRL =`)</dd>
+    <dd>Write (git status)</dd>
+    <dd>It will show how many files have been added to folder in local machine.</dd>
+    <dd>Write (git add  .), to add all the new files at once and update the previous one</dd>
+    <dd>Or write (git add filename.extension), to add specefic file press enter</dd>
+    <dd>Now to commit the changes made by you write (git commit -m "Update or create message" -m "Some Description")</dd>
+    <dd>On successful commit, use the push command</dd>
+    <dd>Write (git push origin main), press enter.</dd>
+</dl>
+<p>Successfully added/ updated the file from local machine.</p>
+<p>Go to the Git Hub and refresh you repository page, you'll find the new file in there with a comment and datetime stamp.</p>
+
+<span>Thanks & Feel free to update this if required</span>
